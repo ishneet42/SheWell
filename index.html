@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>SheWell</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      background-color: #f0f0f0;
     }
 
     header {
-      background-color: #ffccdd;
+      background-color: #ff4081;
       padding: 20px;
       text-align: center;
     }
 
     h1 {
-      color: #333;
+      color: #fff;
       margin: 0;
     }
 
     nav {
       background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     nav ul {
@@ -30,6 +32,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
+      text-align: center;
     }
 
     nav ul li {
@@ -41,6 +44,11 @@
       color: #333;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: #ff4081;
     }
 
     section {
@@ -52,25 +60,65 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     .option {
-      display: inline-block;
-      width: 200px;
-      height: 200px;
+      flex: 0 0 calc(33.33% - 40px);
+      max-width: 300px;
       background-color: #fff;
-      border-radius: 50%;
+      border-radius: 10px;
       margin: 20px;
       padding: 20px;
       text-align: center;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .option:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .option h2 {
       color: #333;
+      margin-bottom: 10px;
     }
+
+    .option a {
+      color: #ff4081;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+    }
+
+    .option a:hover {
+      color: #333;
+    }
+
+    section#education {
+      background-color: #f5f5f5;
+      padding: 2em;
+    }
+
+    section#education h2 {
+      color: #ff4081;
+    }
+
+    section#education p {
+      text-align: justify;
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em 0;
+    }
+
   </style>
 </head>
+
 <body>
   <header>
     <h1>SheWell</h1>
@@ -85,28 +133,47 @@
     </ul>
   </nav>
 
+  <section id="education">
+    <h2>PCOD and BMI</h2>
+    <p>Polycystic Ovary Syndrome (PCOD) is a condition that can be influenced by various factors, including lifestyle and weight. Maintaining a healthy Body Mass Index (BMI) is crucial for managing PCOD effectively.</p>
+    <p>BMI is a numerical value of a person's weight in relation to their height. For individuals with PCOD, maintaining a BMI within the normal range is beneficial for hormonal balance and overall well-being.</p>
+    <p>The World Health Organization (WHO) defines BMI categories as follows:</p>
+    <ul>
+      <li>Underweight: BMI less than 18.5</li>
+      <li>Normal weight: BMI 18.5 to 24.9</li>
+      <li>Overweight: BMI 25 to 29.9</li>
+      <li>Obese: BMI 30 or greater</li>
+    </ul>
+    <p>It's essential to consult with a healthcare professional to determine the most suitable BMI range for your specific situation. Achieving and maintaining a healthy weight through a balanced diet, regular exercise, and lifestyle modifications can positively impact PCOD symptoms and overall health.</p>
+  </section>
+
   <section id="bmi">
     <div class="options-container">
       <div class="option">
         <h2>Check Your BMI</h2>
-        <!-- Add your BMI content here -->
-        <a href="bmi.html">click here to check your BMI and know suggested Calorie intake</a>
+        Discover your path to wellness by effortlessly checking your BMI and uncovering personalized suggestions for a healthier lifestyle.
+        <a href="bmi.html">Click here to check your BMI and know suggested Calorie intake</a>
       </div>
 
       <div class="option">
         <h2>Book an Appointment</h2>
-        <!-- Add your appointment content here -->
-        <a href="book.html">click here to book an appointment with a doctor</a>
+        Empower your journey to well-being with ease – book personalized appointments with experienced doctors who specialize in PCOD care.
+        <a href="book.html">Click here to book an appointment with a doctor</a>
       </div>
 
       <div class="option">
         <h2>Stress Management</h2>
-        <a href="stress.html">click here to listen to relaxing music</a>
+        Immerse yourself in tranquility and manage stress effectively with our curated collection of relaxing music, promoting holistic well-being.
+        <a href="stress.html">Click here to listen to relaxing music</a>
 
-        <!-- Add your stress management content here -->
       </div>
     </div>
   </section>
 
+  <footer>
+    <p>&copy; 2023 SheWell - Dealing with PCOD</p>
+  </footer>
+
 </body>
+
 </html>
